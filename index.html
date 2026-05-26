@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>База Агентов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Главный экран -->
+    <div id="home-screen" class="screen active">
+      <div class="header">
+        <h1>🤖 База Агентов</h1>
+        <p class="subtitle">Ваши AI‑помощники для бизнеса и жизни</p>
+      </div>
+      <div class="categories" id="categories"></div>
+      <div class="agents-grid" id="agents-grid"></div>
+    </div>
+
+    <!-- Карточка агента -->
+    <div id="agent-screen" class="screen">
+      <div class="back-button" id="back-from-agent">← Назад</div>
+      <div id="agent-detail"></div>
+    </div>
+
+    <!-- Чат -->
+    <div id="chat-screen" class="screen">
+      <div class="chat-header">
+        <div class="back-button" id="back-from-chat">← Назад</div>
+        <span id="chat-agent-name"></span>
+      </div>
+      <div class="messages" id="messages"></div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Сообщение..." autocomplete="off">
+        <button id="send-btn">→</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="js/agents.js"></script>
+  <script src="js/chat.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
