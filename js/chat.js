@@ -1,7 +1,7 @@
 let chatAgentName = '';
 
 // ⚠️ После деплоя бэкенда замени этот URL на реальный (например https://gstack-api.onrender.com)
-const API_BASE = 'https://ai-agent-9w6a.onrender.com';
+const API_BASE = 'https://ai-agent-9w6a.onrender.com';//https://gstack-agents.onrender.com
 
 function initChat(agentId) {
   const agent = agents.find(a => a.id === agentId);
