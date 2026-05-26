@@ -173,3 +173,8 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.typing {
+  font-style: italic;
+  opacity: 0.7;
+}
